@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
+    <title>Flappy Pokemon</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background"><div class="scrolling-background"></div></div>
+
+    <img src="./pidgeot.png" alt="bird-img" class="bird" id="bird-1" />
+    <div class="message">Enter To Start Game</div>
+    <div class="score">
+      <span class="score_title"></span>
+      <span class="score_val"></span>
+    </div>
+    <audio id="backgroundMusic" loop>
+      <source
+        src="https://eta.vgmtreasurechest.com/soundtracks/pokemon-game-boy-pok-mon-sound-complete-set-play-cd/pxttckzrev/1-18.%20The%20Road%20To%20Cerulean%20~%20From%20Mt.%20Moon.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+    <script src="script.js" defer></script>
+  </body>
+</html>

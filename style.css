@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.background {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  background-color: skyblue;
+}
+
+.scrolling-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-image: url("./High_resolution_wallpaper_background_ID_77700088739\ copy.png");
+  background-repeat: repeat-x;
+  background-size: 50% 100%;
+  animation: scrollBackground 20s linear infinite;
+}
+
+@keyframes scrollBackground {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes moveBackground {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.bird {
+  height: 100px;
+  width: 130px;
+  position: fixed;
+  top: 40vh;
+  left: 30vw;
+  z-index: 100;
+}
+.pipe_sprite {
+  position: fixed;
+  top: 40vh;
+  left: 100vw;
+  height: 70vh;
+  width: 6vw;
+  background: radial-gradient(lightgreen 50%, green);
+  border: 5px solid black;
+}
+.message {
+  position: absolute;
+  z-index: 10;
+  color: black;
+  top: 30%;
+  left: 50%;
+  border-radius: 20px;
+  font-size: 4em;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.messageStyle {
+  background: white;
+  padding: 10px 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5%;
+}
+
+.messageStyle p {
+  font-size: 30px;
+}
+.score {
+  position: fixed;
+  z-index: 10;
+  height: 2vh;
+  font-size: 10vh;
+  font-weight: 10;
+  color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.score_title {
+  font-size: 100px;
+}
+.score_val {
+  color: gold;
+  font-weight: bold;
+  font-size: 100px;
+}
+@media only screen and (max-width: 1080px) {
+  .message {
+    font-size: 50px;
+    top: 50%;
+    white-space: nowrap;
+  }
+  .score {
+    font-size: 8vh;
+  }
+  .bird {
+    width: 120px;
+    height: 90px;
+  }
+  .pipe_sprite {
+    width: 14vw;
+  }
+}
